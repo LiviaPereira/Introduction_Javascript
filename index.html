@@ -3,11 +3,20 @@
     <head>
         <title>Minha página</title>
         <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-       <script type="text/javascript" src="js/main.js"></script>
-       </script> 
-       <h1>Minha página</h1>
+    <body onload="load()">
+       <button type="button" onclick="clicou()">Clique aqui</button>
+
+       <p id="agradecimento" onclick="redirecionar()"></p>
+       <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+       <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+       <select onchange="funcaoChange(this)">
+           <option value="1"></option>
+           <option value="2"></option>
+           <option value="3"></option>
+       </select>
+
     </body>
 
 </html>
